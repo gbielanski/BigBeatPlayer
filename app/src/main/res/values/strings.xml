@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BigBeatPlayer</string>
+    <string name="my_music">My music</string>
+    <string name="discover">Discover</string>
+    <string name="search">Search</string>
+</resources>
