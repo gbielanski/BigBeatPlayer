@@ -19,8 +19,14 @@
         <activity
             android:name=".MyMusicActivity"
             android:label="@string/my_music" />
-        <activity android:name=".DiscoverActivity" android:label="@string/discover" />
-        <activity android:name=".SearchActivity" android:label="@string/search"/>
+        <activity
+            android:name=".DiscoverActivity"
+            android:label="@string/discover" />
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/search" />
+        <activity android:name=".MusicPlayerActivity" />
+        <activity android:name=".PlaylistActivity"></activity>
     </application>
 
 </manifest>
