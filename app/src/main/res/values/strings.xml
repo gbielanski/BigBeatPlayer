@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">BigBeatPlayer</string>
-    <string name="my_music">My music</string>
+    <string name="my_music">My Playlists</string>
     <string name="discover">Discover</string>
     <string name="search">Search</string>
     <string name="artist">Basement Jaxx</string>
     <string name="title">Never Say Never</string>
+    <string name="music_player_label">Music Player</string>
+    <string name="playlist_label">Playlist</string>
+    <string name="search_hint">Type song or artist name ...</string>
+    <string name="search_result">Search result</string>
 </resources>
