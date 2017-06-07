@@ -7,6 +7,13 @@
     android:orientation="vertical"
     tools:context="com.bigbeatplayer.bigbeatplayer.SearchActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_padding"
+        android:text="Search screen. Using Spotify API."
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
     <SearchView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
