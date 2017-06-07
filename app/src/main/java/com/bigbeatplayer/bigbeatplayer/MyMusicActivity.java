@@ -29,16 +29,16 @@ public class MyMusicActivity extends AppCompatActivity {
             }
         });
 
-        Button homeButton = (Button)findViewById(R.id.my_music_home_button);
-        homeButton.setOnClickListener(new View.OnClickListener() {
+        Button discoverButton = (Button) findViewById(R.id.my_music_home_button);
+        discoverButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyMusicActivity.this, MainActivity.class);
+                Intent intent = new Intent(MyMusicActivity.this, DiscoverActivity.class);
                 startActivity(intent);
             }
         });
 
-        Button nowPlaying = (Button)findViewById(R.id.my_music_now_playing_button);
+        Button nowPlaying = (Button) findViewById(R.id.my_music_now_playing_button);
         nowPlaying.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -11,58 +11,67 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/small_padding"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:text="Main window"
-            android:textColor="@android:color/white"/>
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/white" />
 
         <RelativeLayout
+            android:id="@+id/my_music"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:id="@+id/my_music">
+            android:layout_height="180dp">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 android:src="@drawable/m1a" />
+
             <TextView
+                style="@style/MainActivityTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/my_music"
-                style="@style/MainActivityTextView"/>
+                android:text="@string/my_music" />
         </RelativeLayout>
+
         <RelativeLayout
+            android:id="@+id/discover"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:id="@+id/discover">
+            android:layout_height="180dp">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 android:src="@drawable/m2" />
+
             <TextView
+                style="@style/MainActivityTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/discover"
-                style="@style/MainActivityTextView"/>
+                android:text="@string/discover" />
         </RelativeLayout>
+
         <RelativeLayout
+            android:id="@+id/search"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:id="@+id/search">
+            android:layout_height="180dp">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 android:src="@drawable/m3" />
+
             <TextView
+                style="@style/MainActivityTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/search"
-                style="@style/MainActivityTextView"/>
+                android:text="@string/search" />
         </RelativeLayout>
     </LinearLayout>
 
