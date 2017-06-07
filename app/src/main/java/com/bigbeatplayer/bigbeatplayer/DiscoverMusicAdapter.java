@@ -20,11 +20,13 @@ class DiscoverMusicAdapter extends RecyclerView.Adapter<DiscoverMusicAdapter.Dis
     public interface OnClickDiscoverHandler {
         void discoverOnClick();
     }
+
     private ArrayList<Integer> discoverData = new ArrayList<>();
 
-    public void setData(ArrayList<Integer> discoverData){
+    public void setData(ArrayList<Integer> discoverData) {
         this.discoverData = discoverData;
     }
+
     @Override
     public DiscoverMusicViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         Context ctx = parent.getContext();

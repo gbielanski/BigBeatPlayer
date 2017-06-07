@@ -16,7 +16,7 @@ public class PlaylistActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_playlist);
         //Fake data here
-        String [] myArray = {
+        String[] myArray = {
                 "Praise You by Fatboy Slim",
                 "Star 69by Fatboy Slim",
                 "The Test by The Chemical Brothers",
@@ -29,7 +29,7 @@ public class PlaylistActivity extends AppCompatActivity {
         };
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_expandable_list_item_1, myArray);
 
-        ListView listView = (ListView)findViewById(R.id.playlist_list);
+        ListView listView = (ListView) findViewById(R.id.playlist_list);
         listView.setAdapter(arrayAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

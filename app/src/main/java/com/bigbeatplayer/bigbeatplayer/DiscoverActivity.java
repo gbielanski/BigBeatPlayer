@@ -17,7 +17,7 @@ public class DiscoverActivity extends AppCompatActivity implements DiscoverMusic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_discover);
         createDiscoverData();
-        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.discover_music_grid);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.discover_music_grid);
         GridLayoutManager layoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(layoutManager);
         DiscoverMusicAdapter adapter = new DiscoverMusicAdapter(this);
@@ -25,7 +25,7 @@ public class DiscoverActivity extends AppCompatActivity implements DiscoverMusic
         recyclerView.setAdapter(adapter);
     }
 
-    void createDiscoverData(){
+    void createDiscoverData() {
         discoverData.add(R.drawable.cover1);
         discoverData.add(R.drawable.cover2);
         discoverData.add(R.drawable.cover3);

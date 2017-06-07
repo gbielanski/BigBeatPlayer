@@ -25,8 +25,12 @@
         <activity
             android:name=".SearchActivity"
             android:label="@string/search" />
-        <activity android:name=".MusicPlayerActivity" android:label="@string/music_player_label"/>
-        <activity android:name=".PlaylistActivity" android:label="@string/playlist_label"></activity>
+        <activity
+            android:name=".MusicPlayerActivity"
+            android:label="@string/music_player_label" />
+        <activity
+            android:name=".PlaylistActivity"
+            android:label="@string/playlist_label"></activity>
     </application>
 
 </manifest>
