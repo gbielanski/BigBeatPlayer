@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 public class MyMusicActivity extends AppCompatActivity {
@@ -25,6 +26,25 @@ public class MyMusicActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(MyMusicActivity.this, PlaylistActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        Button homeButton = (Button)findViewById(R.id.my_music_home_button);
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MyMusicActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button nowPlaying = (Button)findViewById(R.id.my_music_now_playing_button);
+        nowPlaying.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MyMusicActivity.this, MusicPlayerActivity.class);
+                startActivity(intent);
+
             }
         });
     }
