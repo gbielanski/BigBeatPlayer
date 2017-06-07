@@ -1,11 +1,13 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/playist_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:padding="@dimen/small_padding"
         android:text="Library. Songs in the playlist."
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
@@ -15,6 +17,39 @@
         android:id="@+id/playlist_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/playist_label"
+        android:layout_marginBottom="@dimen/big_padding"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp" />
-</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/playlist_discover_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_padding"
+            android:layout_weight="1"
+            android:text="@string/discover" />
+
+        <Button
+            android:id="@+id/playlist_search_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_padding"
+            android:layout_weight="1"
+            android:text="@string/search" />
+
+        <Button
+            android:id="@+id/playlist_now_playing_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_padding"
+            android:layout_weight="1"
+            android:text="@string/now_playing" />
+    </LinearLayout>
+</RelativeLayout>

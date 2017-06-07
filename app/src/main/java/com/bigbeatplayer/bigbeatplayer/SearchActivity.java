@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 public class SearchActivity extends AppCompatActivity {
@@ -31,11 +32,33 @@ public class SearchActivity extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(R.id.search_list);
         listView.setAdapter(arrayAdapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+
+        Button discoverButton = (Button) findViewById(R.id.search_discover_button);
+        discoverButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onClick(View v) {
+                Intent intent = new Intent(SearchActivity.this, DiscoverActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button myMusic = (Button) findViewById(R.id.search_my_music_button);
+        myMusic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SearchActivity.this, MyMusicActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button nowPlaying = (Button) findViewById(R.id.search_now_playing_button);
+        nowPlaying.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Intent intent = new Intent(SearchActivity.this, MusicPlayerActivity.class);
                 startActivity(intent);
+
             }
         });
     }

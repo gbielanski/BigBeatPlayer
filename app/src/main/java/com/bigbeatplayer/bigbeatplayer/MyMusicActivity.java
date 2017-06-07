@@ -29,11 +29,20 @@ public class MyMusicActivity extends AppCompatActivity {
             }
         });
 
-        Button discoverButton = (Button) findViewById(R.id.my_music_home_button);
+        Button discoverButton = (Button) findViewById(R.id.my_music_discover_button);
         discoverButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MyMusicActivity.this, DiscoverActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button searchButton = (Button) findViewById(R.id.my_music_search_button);
+        searchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MyMusicActivity.this, SearchActivity.class);
                 startActivity(intent);
             }
         });

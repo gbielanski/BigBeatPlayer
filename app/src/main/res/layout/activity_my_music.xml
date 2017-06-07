@@ -27,12 +27,20 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/my_music_home_button"
+            android:id="@+id/my_music_discover_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/small_padding"
             android:layout_weight="1"
-            android:text="Discover" />
+            android:text="@string/discover" />
+
+        <Button
+            android:id="@+id/my_music_search_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_padding"
+            android:layout_weight="1"
+            android:text="@string/search" />
 
         <Button
             android:id="@+id/my_music_now_playing_button"
@@ -40,6 +48,6 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/small_padding"
             android:layout_weight="1"
-            android:text="Now Playing" />
+            android:text="@string/now_playing" />
     </LinearLayout>
 </RelativeLayout>
