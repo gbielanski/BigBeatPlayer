@@ -56,7 +56,7 @@ public class DiscoverActivity extends AppCompatActivity implements DiscoverMusic
         });
     }
 
-    void createDiscoverData() {
+    private void createDiscoverData() {
         discoverData.add(R.drawable.cover1);
         discoverData.add(R.drawable.cover2);
         discoverData.add(R.drawable.cover3);

@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:padding="@dimen/small_padding"
-        android:text="Song detail screen and player. Using Spotify Api."
+        android:text="@string/player_label_description"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:textColor="@android:color/white" />
 
@@ -63,37 +63,41 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/song_image">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/previous"
                 android:src="@drawable/ic_skip_previous_white_24px" />
 
             <ImageView
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:layout_centerHorizontal="true"
+                android:contentDescription="@string/play_or_stop"
                 android:src="@drawable/ic_play_circle_outline_white_24px" />
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
+                android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
+                android:contentDescription="@string/next"
                 android:src="@drawable/ic_skip_next_white_24px" />
         </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/player_discover_button"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/small_padding"
@@ -102,6 +106,7 @@
 
             <Button
                 android:id="@+id/player_search_button"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/small_padding"
@@ -110,6 +115,7 @@
 
             <Button
                 android:id="@+id/player_my_music_button"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/small_padding"

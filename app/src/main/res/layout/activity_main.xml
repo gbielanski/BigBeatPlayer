@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,14 +8,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="@dimen/small_padding"
-            android:text="Main window"
+            android:text="@string/main_window_label_description"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
             android:textColor="@android:color/white" />
 
@@ -29,7 +28,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/m1a" />
+                android:src="@drawable/m1a"
+                android:contentDescription="@string/my_music"/>
 
             <TextView
                 style="@style/MainActivityTextView"
@@ -47,7 +47,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/m2" />
+                android:src="@drawable/m2"
+                android:contentDescription="@string/discover"/>
 
             <TextView
                 style="@style/MainActivityTextView"
@@ -65,7 +66,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/m3" />
+                android:src="@drawable/m3"
+                android:contentDescription="@string/search"/>
 
             <TextView
                 style="@style/MainActivityTextView"

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
     android:orientation="vertical"
     tools:context="com.bigbeatplayer.bigbeatplayer.SearchActivity">
 
@@ -13,15 +13,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:padding="@dimen/small_padding"
-        android:text="Search screen. Using Spotify API."
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        android:text="@string/search_label_description"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white" />
 
     <SearchView
         android:id="@+id/search_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/search_label"
-        android:queryHint="@string/search_hint" />
+        android:queryHint="@string/search_hint"
+        android:background="@android:color/white"/>
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/search_tv"
@@ -30,7 +32,8 @@
         android:layout_below="@id/search_search"
         android:layout_margin="16dp"
         android:text="@string/search_result"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
 
     <ListView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -38,7 +41,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/search_tv"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginRight="@dimen/small_padding"
         android:layout_marginBottom="@dimen/big_padding"
+        android:background="@android:color/white"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp" />
 
@@ -50,6 +56,7 @@
 
         <Button
             android:id="@+id/search_discover_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/small_padding"
@@ -58,6 +65,7 @@
 
         <Button
             android:id="@+id/search_my_music_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/small_padding"
@@ -66,6 +74,7 @@
 
         <Button
             android:id="@+id/search_now_playing_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/small_padding"

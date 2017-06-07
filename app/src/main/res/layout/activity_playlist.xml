@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
     android:orientation="vertical">
 
     <TextView
@@ -9,8 +10,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:padding="@dimen/small_padding"
-        android:text="Library. Songs in the playlist."
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        android:text="@string/playlist_label_description"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white" />
 
     <ListView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -18,9 +20,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/playist_label"
+        android:layout_marginLeft="@dimen/small_padding"
+        android:layout_marginRight="@dimen/small_padding"
         android:layout_marginBottom="@dimen/big_padding"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp" />
+        tools:layout_editor_absoluteY="8dp"
+        android:background="@android:color/white"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,6 +35,7 @@
 
         <Button
             android:id="@+id/playlist_discover_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/small_padding"
@@ -38,6 +44,7 @@
 
         <Button
             android:id="@+id/playlist_search_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/small_padding"
@@ -46,6 +53,7 @@
 
         <Button
             android:id="@+id/playlist_now_playing_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/small_padding"

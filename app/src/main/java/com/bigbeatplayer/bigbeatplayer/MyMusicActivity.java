@@ -17,7 +17,7 @@ public class MyMusicActivity extends AppCompatActivity {
         setContentView(R.layout.activity_my_music);
         //Fake data here
         String[] myStringArray = {"Perfect.Piano", "Before.You.Go.Away", "Dance.On.The.Roof", "Pure Powder", "Dance.Dance.Dance"};
-        ListView listView = (ListView) findViewById(R.id.my_mysic_list);
+        ListView listView = (ListView) findViewById(R.id.my_music_list);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, myStringArray);
         listView.setAdapter(arrayAdapter);

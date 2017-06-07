@@ -1,7 +1,6 @@
 package com.bigbeatplayer.bigbeatplayer;
 
 import android.content.Intent;
-import android.support.v4.app.ShareCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +18,7 @@ public class PlaylistActivity extends AppCompatActivity {
         //Fake data here
         String[] myArray = {
                 "Praise You by Fatboy Slim",
-                "Star 69by Fatboy Slim",
+                "Star 69 by Fatboy Slim",
                 "The Test by The Chemical Brothers",
                 "Wonders Of The Deep by The Chemical Brothers",
                 "What A Difference Your Love Makes by Basement Jaxx",

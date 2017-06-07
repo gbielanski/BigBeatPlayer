@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
 
     <TextView
         android:id="@+id/my_music_label"
@@ -8,17 +9,20 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:padding="@dimen/small_padding"
-        android:text="Library. List of playlists."
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        android:text="@string/my_music_label_description"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/white"/>
 
     <ListView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/my_mysic_list"
+        android:id="@+id/my_music_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/my_music_label"
         tools:layout_editor_absoluteX="@dimen/small_padding"
-        tools:layout_editor_absoluteY="@dimen/small_padding" />
+        tools:layout_editor_absoluteY="@dimen/small_padding"
+        android:background="@android:color/white"
+        android:layout_margin="@dimen/small_padding"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,6 +32,7 @@
 
         <Button
             android:id="@+id/my_music_discover_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/small_padding"
@@ -36,6 +41,7 @@
 
         <Button
             android:id="@+id/my_music_search_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/small_padding"
@@ -44,6 +50,7 @@
 
         <Button
             android:id="@+id/my_music_now_playing_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/small_padding"

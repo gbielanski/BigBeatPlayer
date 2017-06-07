@@ -10,4 +10,14 @@
     <string name="search_hint">Type song or artist name ...</string>
     <string name="search_result">Search result</string>
     <string name="now_playing">Now Playing</string>
+    <string name="previous">Previous song</string>
+    <string name="play_or_stop">Play or stop</string>
+    <string name="next">Next song</string>
+    <string name="cover">Album cover</string>
+    <string name="discover_label_description">Music propositions for user using Spotify Api</string>
+    <string name="main_window_label_description">Main window</string>
+    <string name="player_label_description">Song detail screen and player. Using Spotify Api.</string>
+    <string name="my_music_label_description">Library. List of playlists.</string>
+    <string name="playlist_label_description">Library. Songs in the playlist.</string>
+    <string name="search_label_description">Search screen. Using Spotify API.</string>
 </resources>
